@@ -9,14 +9,20 @@
                     type="date"
                     id="date"
                     value="{{old('date',$request->date ?? '')}}"
-                    name="date">|
+                    name="date">
+                <div>
+                    {!! $errors->first('date','<small class="alert-error">:message</small>') !!}
+                </div>
+            </label>
+                <label for="">Ingrese Hora</label>
                 <input
                     type="time"
                     id="hour"
                     value="{{old('hour',$request->hour ?? '')}}"
                     name="hour">
-            </label>
-            <br>
+                <div>
+                    {!! $errors->first('hour','<small class="alert-error">:message</small>') !!}
+                </div>
             <label for="">Ingresar Placa
                 <input type="text"
 {{--                       pattern="[A-Za-z]" --}}
@@ -30,6 +36,13 @@
                        max="9999"
                        value="{{old('digits',$request->digits ?? '')}}"
                        min="000">
+                <div>
+
+                    {!! $errors->first('letters','<small class="alert-error">:message</small>') !!}
+
+                    {!! $errors->first('digits','<small class="alert-error">:message</small>') !!}
+
+                </div>
             </label>
             <br>
             <button type="submit"

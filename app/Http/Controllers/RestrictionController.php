@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Restriction;
 use Illuminate\Http\Request;
+use App\Http\Requests\RestrictionRequest;
 
 class RestrictionController extends Controller
 {
@@ -21,10 +22,12 @@ class RestrictionController extends Controller
     /**
      * Show the form for creating a new resource.
      *
-     * @return \Illuminate\Http\Response
+     * @param RestrictionRequest $request
+     * @return array
      */
-    public function restrictions(Request $request)
+    public function restrictions(RestrictionRequest $request)
     {
+//        return $request->validated();
 
         return view('restriction',compact('request'));
     }
