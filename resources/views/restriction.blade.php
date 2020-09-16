@@ -5,8 +5,16 @@
             @csrf
 {{--            @method('POST')--}}
             <label for="">Ingresar Fecha
-                <input type="date" id="date" name="date">|
-                <input type="time" id="hour" name="hour">
+                <input
+                    type="date"
+                    id="date"
+                    value="{{old('date',$request->date ?? '')}}"
+                    name="date">|
+                <input
+                    type="time"
+                    id="hour"
+                    value="{{old('hour',$request->hour ?? '')}}"
+                    name="hour">
             </label>
             <br>
             <label for="">Ingresar Placa
@@ -14,11 +22,13 @@
 {{--                       pattern="[A-Za-z]" --}}
                        name="letters"
                        id="letters"
+                       value="{{old('letters',$request->letters ?? '')}}"
                        maxlength="3">|
                 <input type="number"
                        id="digits"
                        name="digits"
                        max="9999"
+                       value="{{old('digits',$request->digits ?? '')}}"
                        min="000">
             </label>
             <br>
