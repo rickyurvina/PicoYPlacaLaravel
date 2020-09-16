@@ -1,0 +1,16 @@
+.fondo{
+    /*background-image: url('../Img/backgroundStackBuilders.png');*/
+    background-image: url('../Img/backgroundStackBuilders.png');
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.cuerpo{
+    background-color: #2d3748;
+}
+.titulo{
+    color: #1a202c;
+    position: center;
+}
