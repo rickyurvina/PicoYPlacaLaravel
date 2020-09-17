@@ -13,7 +13,7 @@
 		<ul>
 			<li> composer install</li>		
 		</ul>
-	</li>
-	<li></li>
+	</li>	
 </ul>
+<small> Desarrollado por Ricardo Urvina C </small>
 
