@@ -7,40 +7,39 @@
             <label for="">Ingresar Fecha
                 <input
                     type="date"
-                    id="date"
-                    value="{{old('date',$request->date ?? '')}}"
-                    name="date">
+                    id="fecha"
+                    value="{{old('fecha',$request->fecha ?? '')}}"
+                    name="fecha">
                 <div>
-                    {!! $errors->first('date','<small class="alert-error">:message</small>') !!}
+                    {!! $errors->first('fecha','<small class="alert-error">:message</small>') !!}
                 </div>
             </label>
                 <label for="">Ingrese Hora</label>
                 <input
                     type="time"
-                    id="hour"
-                    value="{{old('hour',$request->hour ?? '')}}"
-                    name="hour">
+                    id="hora"
+                    value="{{old('hora',$request->hora ?? '')}}"
+                    name="hora">
                 <div>
-                    {!! $errors->first('hour','<small class="alert-error">:message</small>') !!}
+                    {!! $errors->first('hora','<small class="alert-error">:message</small>') !!}
                 </div>
             <label for="">Ingresar Placa
                 <input type="text"
-{{--                       pattern="[A-Za-z]" --}}
-                       name="letters"
-                       id="letters"
-                       value="{{old('letters',$request->letters ?? '')}}"
+                       name="letras"
+                       id="letras"
+                       value="{{old('letras',$request->letras ?? '')}}"
                        maxlength="3">|
                 <input type="number"
-                       id="digits"
-                       name="digits"
+                       id="digitos_numericos"
+                       name="digitos_numericos"
                        max="9999"
-                       value="{{old('digits',$request->digits ?? '')}}"
+                       value="{{old('digitos_numericos',$request->digitos_numericos ?? '')}}"
                        min="000">
                 <div>
 
-                    {!! $errors->first('letters','<small class="alert-error">:message</small>') !!}
+                    {!! $errors->first('letras','<small class="alert-error">:message</small>') !!}
 
-                    {!! $errors->first('digits','<small class="alert-error">:message</small>') !!}
+                    {!! $errors->first('digitos_numericos','<small class="alert-error">:message</small>') !!}
 
                 </div>
             </label>
@@ -53,13 +52,19 @@
         </form>
         <div>
             <div>
-                <label for="">Fecha: {{$request->date ?? ''}}</label>
+                <label for="">Fecha: {{$request->fecha ?? ''}}</label>
             </div>
             <div>
-                <label for="">Hora: {{$request->hour ?? ''}}</label>
+                <label for="">Hora: {{$request->hora ?? ''}}</label>
             </div>
             <div>
-                <label for="">Placa: {{$request->letters ?? ''}}-{{$request->digits ?? ''}}</label>
+                <label for="">Placa: {{$placa ?? ''}}</label>
+            </div>
+            <div>
+                <h2>Buenos dias hoy es {{$nombre_dia ?? ''}}</h2>
+            </div>
+            <div>
+                <h2> {{$mensaje ?? ''}}</h2>
             </div>
         </div>
     </div>

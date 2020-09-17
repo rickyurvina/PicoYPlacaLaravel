@@ -26,10 +26,10 @@ class RestrictionRequest extends FormRequest
     {
         return [
             //
-            'date'=>'date|required',
-            'hour'=>'required',
-            'letters'=>'required|min:3|max:4|alpha',
-            'digits'=>'required|numeric'
+            'fecha'=>'date|required',
+            'hora'=>'required',
+            'letras'=>'required|min:3|max:4|alpha',
+            'digitos_numericos'=>'required|min:3|max:4'
         ];
     }
 }
