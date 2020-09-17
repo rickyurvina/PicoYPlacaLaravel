@@ -2,16 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a120e3a0-929b-4b90-b361-9770e1a5d5cc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/RestrictionRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/es.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/es/auth.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/es/pagination.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/es/passwords.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/es/validation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Img/backgroundStackBuilders.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RestrictionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RestrictionController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/RestrictionRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/RestrictionRequest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/es.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/es.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/restriction.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/restriction.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -144,11 +145,12 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/lang" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ricky\OneDrive - Pontificia Universidad Católica del Ecuador\Documentos\PRUEBA STACK BUILDERS\picoyplaca\public" />
       <recent name="C:\Users\ricky\OneDrive - Pontificia Universidad Católica del Ecuador\Documentos\PRUEBA STACK BUILDERS\picoyplaca\resources\lang" />
     </key>
   </component>
@@ -183,7 +185,7 @@
       <workItem from="1600204000137" duration="4000" />
       <workItem from="1600204017174" duration="11036000" />
       <workItem from="1600285065244" duration="1746000" />
-      <workItem from="1600286823944" duration="6938000" />
+      <workItem from="1600286823944" duration="16352000" />
     </task>
     <servers />
   </component>

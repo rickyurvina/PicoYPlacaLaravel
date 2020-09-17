@@ -2,38 +2,33 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Restriction;
-use Illuminate\Http\Request;
 use App\Http\Requests\RestrictionRequest;
 
 class RestrictionController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Muestra el formulario de ingreso de datos
      *
      * @return \Illuminate\Http\Response
      */
     public function index()
     {
-        //
         return view('restriction');
     }
 
     /**
-     * Show the form for creating a new resource.
+     * Recoge los datos ingresados pr el usuario y valida si la placa puede circular o no
      *
      * @param RestrictionRequest $request
-     * @return array
+     * @return mensaje en vista
      */
     public function restrictions(RestrictionRequest $request)
     {
-//        return $request->validated();
         $nombre_dia=$day=date('w', strtotime($request->fecha));
         $placa=$request->letras.$request->digitos_numericos;
+        $placa=strtoupper($placa);
         $ultimo_digito=substr($placa,-1);
         $hora_dia=$request->hora;
-        $mensaje="";
-
         switch($nombre_dia)
         {
             case 1: $nombre_dia="Lunes";
@@ -88,74 +83,6 @@ class RestrictionController extends Controller
                 $mensaje="Puede Circular Libremente";
                 break;
         }
-//        if (($hora_dia>='16:00' && $hora_dia <='19:30') || ($hora_dia >='07:00' && $hora_dia<='09:30'))
-//        {
-//            $mensaje=" No Puede Circular Libremente";
-//        }
-//        else{
-//            $mensaje="Puede Circular Libremente Libremente";
-//        }
-
         return view('restriction',compact('request','nombre_dia','mensaje','placa'));
-    }
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Restriction  $restriction
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Restriction $restriction)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\Restriction  $restriction
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Restriction $restriction)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Restriction  $restriction
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, Restriction $restriction)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\Restriction  $restriction
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(Restriction $restriction)
-    {
-        //
     }
 }
